@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PimPumPlastic</title>
+</head>
+<body>
+    <button id="cukicream"><img width="200" height="200" src="./img/cookiuesandcream.jpg" alt=""></button>
+ <button id="cukihoney"><img width="200" height="200" src="./img/cukijoni.webp" alt=""></button>
+ <button id="wacho"><img width="200" height="200" src="./img/wacho.webp" alt=""></button>
+ <button id="sabes"><img width="200" height="200" src="./img/sabes.jpg" alt=""></button>
+
+
+
+<script>
+        const cukicream = document.getElementById('cukicream');
+        const audiocream = new Audio();
+        audiocream.src = "./aud/cookiencream.mp3";
+        cukicream.addEventListener('click',function(){
+            audiocream.play()
+        })
+         const cukihoney = document.getElementById('cukihoney');
+        const audiohoney = new Audio();
+        audiohoney.src = "./aud/Cokkiesandjoni.mp3";
+        cukihoney.addEventListener('click',function(){
+            audiohoney.play()
+        })
+         const wacho = document.getElementById('wacho');
+        const audiowacho = new Audio();
+        audiowacho.src = "./aud/Wacho.mp3";
+        wacho.addEventListener('click',function(){
+            audiowacho.play()
+        })
+        const sabes = document.getElementById('sabes');
+        const audiosabes = new Audio();
+        audiosabes.src = "./aud/sabes.mp3";
+        sabes.addEventListener('click',function(){
+            audiosabes.play()
+        })
+    </script>
+</body>
+</html>
